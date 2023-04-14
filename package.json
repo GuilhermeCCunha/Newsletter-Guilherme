@@ -16,7 +16,6 @@
     "@skynexui/responsive_stylesheet": "^1.11.0",
     "@supabase/supabase-js": "^2.20.0",
     "@types/styled-components": "^5.1.26",
-    "install": "^0.13.0",
     "next": "^13.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
