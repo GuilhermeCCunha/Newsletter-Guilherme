@@ -32,8 +32,8 @@ const controllerByMethod = {
       sendGridMail.setApiKey(process.env.SENDGRID_KEY);
       
       await sendGridMail.send({
-        to:[ email, 'guilhermecdacunha@gmail.com'],
-        from: "guilhermecdacunha@gmail.com",
+        to:[ email, process.env.SENDER_EMAIL],
+        from: process.env.SENDER_EMAIL,
         subject: "Newsletter do Guilherme Cunha",
         html: `Obrigado, <strong>${email}</strong> por assinar a minha Newsletter!`
       });
