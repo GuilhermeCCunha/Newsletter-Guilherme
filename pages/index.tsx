@@ -6,6 +6,7 @@ import { BaseComponent } from "@src/theme/BaseComponent";
 import Head from "next/head";
 import React from 'react'
 import Swal from "sweetalert2";
+import { colors } from "@src/theme/defaults/colors";
 
 
 function useForm({ initialValues }) {
@@ -58,7 +59,7 @@ export default function NewsletterScreen() {
                 title: 'Erro!',
                 text: 'Você precisa informar um email valido!',
                 icon: 'error',
-                confirmButtonColor: '#E12D39',
+                confirmButtonColor: colors.negative.x500,
               });
               return;
             }
@@ -67,7 +68,7 @@ export default function NewsletterScreen() {
               title: 'Muito bem!',
               text: 'Você foi cadastrado com sucesso! Cheque seu email para garantir',
               icon: 'success',
-              confirmButtonColor: '#18981D',
+              confirmButtonColor: colors.positive.x500,
               backdrop: `
         rgba(123,123,123,0.3)
         url("gifs-de-confete.gif")
