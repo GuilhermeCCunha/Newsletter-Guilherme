@@ -39,3 +39,13 @@ SENDER_EMAIL=ADMIN_EMAIL
  ```
 É necessário criar um arquivo `.env` de acordo com o exemplo acima, para que o projeto funcione normalmente.
 
+### Executar o projeto
+
+```bash
+# Execute o projeto
+npm install
+npm run dev
+
+# Abra o navegador em http://localhost:3000 para ver o resultado
+```
+
